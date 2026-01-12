@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 📦 Stock & Order Management System This repository contains the frontend of the Stock & Order Management System, built using React and Material UI. The application provides a user-friendly interface to manage stocks and customer orders while maintaining data consistency with the backend API.
 
 A full-stack web application to manage product stocks and customer orders, built using React and ASP.NET Core Web API. The system focuses on clean API design, proper state management, and real-world UI interactions.
@@ -33,3 +34,7 @@ Frontend (UI) npm install npm run dev
 The application will run at: http://localhost:5173
 
 📌 Future Enhancements Authentication & authorization Pagination and search Role-based access Improved error notifications
+=======
+# stock-order-management
+This repository contains the frontend of the Stock &amp; Order Management System, built using React and Material UI. The application provides a user-friendly interface to manage stocks and customer orders while maintaining data consistency with the backend API.
+>>>>>>> 205605312a7060ceff00160007ea86eab1260e68
