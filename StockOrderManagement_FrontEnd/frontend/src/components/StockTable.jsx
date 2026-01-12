@@ -20,7 +20,6 @@ function StockTable({ stocks = [], setStocks }) {
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [selectedStock, setSelectedStock] = useState(null);
 
-  // 🔹 Sorting by stock name
   const handleSort = () => {
     const sorted = [...stocks].sort((a, b) =>
       order === "asc"
@@ -53,7 +52,7 @@ function StockTable({ stocks = [], setStocks }) {
   };
 
   const confirmDelete = async () => {
-    if (!selectedStock) return; // 🛡 safety guard
+    if (!selectedStock) return;
 
     try {
       await deleteStock(selectedStock.id);
@@ -65,7 +64,7 @@ function StockTable({ stocks = [], setStocks }) {
       console.error(err);
       alert("Failed to delete stock");
     } finally {
-      closeConfirmDialog(); // ✅ ALWAYS closes popup
+      closeConfirmDialog();
     }
   };
 

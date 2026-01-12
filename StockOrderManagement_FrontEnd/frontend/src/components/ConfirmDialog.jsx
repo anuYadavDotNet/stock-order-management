@@ -12,7 +12,7 @@ function ConfirmDialog({ open, title, message, onConfirm, onClose }) {
     <Dialog
       open={open}
       onClose={onClose}
-      keepMounted={false}   // 🔥 THIS IS THE FIX
+      keepMounted={false}
     >
       <DialogTitle>{title}</DialogTitle>
 

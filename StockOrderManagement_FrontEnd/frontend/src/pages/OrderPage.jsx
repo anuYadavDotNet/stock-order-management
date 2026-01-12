@@ -32,7 +32,7 @@ const handleAddOrder = async (order) => {
 };
 const handleOpenAddOrder = async () => {
   const res = await getStocks();
-  setStocks(res.data);   // refresh stocks
+  setStocks(res.data);
   setOpen(true);
 };
 
