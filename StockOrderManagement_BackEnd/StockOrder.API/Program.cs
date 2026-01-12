@@ -10,6 +10,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.Configure<MongoDBSettings>(
     builder.Configuration.GetSection("MongoDBSettings"));
 
+builder.Services.AddScoped<IStockRepository, StockRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+
 builder.Services.AddSingleton<StockRepository>();
 builder.Services.AddSingleton<OrderRepository>();
 

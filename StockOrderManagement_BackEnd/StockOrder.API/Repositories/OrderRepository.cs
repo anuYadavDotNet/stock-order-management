@@ -5,7 +5,7 @@ using StockOrder.API.Settings;
 
 namespace StockOrder.API.Repositories
 {
-    public class OrderRepository
+    public class OrderRepository : IOrderRepository
     {
         private readonly IMongoCollection<Order> _orders;
 

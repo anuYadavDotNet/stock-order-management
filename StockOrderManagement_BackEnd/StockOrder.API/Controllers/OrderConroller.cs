@@ -25,7 +25,6 @@ namespace StockOrder.API.Controllers
 
         [HttpPost]
         public IActionResult AddOrder(Order order)
-        
         {
             var stock = _stockRepo.GetByName(order.Stock);
 
@@ -38,7 +37,6 @@ namespace StockOrder.API.Controllers
             stock.Qty -= order.Qty;
             stock.OrderedQty += order.Qty;
             _stockRepo.Update(stock.Id, stock);
-            order.Id = stock.Id;
             return Ok(_orderRepo.Create(order));
         }
 
